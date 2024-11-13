@@ -5,8 +5,9 @@ import './index.css';
 // import RefUsage from './pages/RefUsage/index';
 // import UseEffect from './pages/UseEffect/index';
 // import SeparatingEvent from './pages/SeparatingEvent/index';
-import UseImmerReducer from './pages/UseImmerReducer/index';
+// import UseImmerReducer from './pages/UseImmerReducer/index';
 // import UseReducer from './pages/UseReducer/index';
+import UseContext from './pages/UseContext/index';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +17,8 @@ root.render(
     {/* <RefUsage /> */}
     {/* <SeparatingEvent /> */}
     {/* <UseReducer /> */}
-    <UseImmerReducer />
+    {/* <UseImmerReducer /> */}
+    <UseContext />
   </React.StrictMode>
 );
 
