@@ -1,15 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import TodoList from './pages/todo-list/index';
-// import ChatPage from './pages/chat-page/index';
-import UseEffect from './pages/use-effect/index';
+// import TodoList from './pages/TodoList/index';
+// import RefUsage from './pages/RefUsage/index';
+// import UseEffect from './pages/UseEffect/index';
+// import SeparatingEvent from './pages/SeparatingEvent/index';
+import UseImmerReducer from './pages/UseImmerReducer/index';
+// import UseReducer from './pages/UseReducer/index';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UseEffect />
+    {/* <UseEffect /> */}
+    {/* <RefUsage /> */}
+    {/* <SeparatingEvent /> */}
+    {/* <UseReducer /> */}
+    <UseImmerReducer />
   </React.StrictMode>
 );
 

@@ -1,13 +1,25 @@
-// import { useEffect, useState, useRef } from 'react'
+import { forwardRef, useImperativeHandle, useState } from 'react'
 
-function comment({ roomId }) {
-  console.log('更新：', roomId);
-  
+function Comment({ roomId, content }, commentComponentRef) {
+  let [childContent] = useState('childContent');
+
+  useImperativeHandle(commentComponentRef, () => ({
+    getContent () {
+      console.log(childContent);
+    },
+  }));
+
   return (
-    <div className="comment-component">
-      {roomId}
+    <div className="comment-component" ref={commentComponentRef}>
+      <div className="title">
+        房间：{roomId}
+      </div>
     </div>
   );
 }
-
-export default comment;
+/* 通过 forwardRef 将子组件的DOM暴露给父组件
+forwardRef((props, ref) => {
+  return <input {...props} ref={ref} />;
+}) 
+*/
+export default forwardRef(Comment);
