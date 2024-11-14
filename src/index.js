@@ -7,7 +7,8 @@ import './index.css';
 // import SeparatingEvent from './pages/SeparatingEvent/index';
 // import UseImmerReducer from './pages/UseImmerReducer/index';
 // import UseReducer from './pages/UseReducer/index';
-import UseContext from './pages/UseContext/index';
+// import UseContext from './pages/UseContext/index';
+import Dashboard from './pages/Dashboard/index';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +19,8 @@ root.render(
     {/* <SeparatingEvent /> */}
     {/* <UseReducer /> */}
     {/* <UseImmerReducer /> */}
-    <UseContext />
+    {/* <UseContext /> */}
+    <Dashboard />
   </React.StrictMode>
 );
 
